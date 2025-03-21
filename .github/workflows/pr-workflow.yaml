@@ -10,7 +10,7 @@ concurrency:
 
 env:
   PYTHON_VERSION: "3.11"
-  CONDA_ENV: "conda_windows_sonar_gh_actions"
+  CONDA_ENV: "conda_sonaronwindows"
   PYPI_LIBRARY_NAME: "sonaronwindows"
   SONAR_SCANNER_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-windows-x64.zip
   SONAR_INSTALL_DIR: C:\SonarScannerCLI\sonar-scanner-6.1.0.4477-windows-x64
@@ -46,7 +46,7 @@ jobs:
           conda env create -f environment.yml
           echo "Initializing and activating Conda"
           conda init powershell
-          conda activate conda_windows_sonar_gh_actions
+          conda activate conda_sonaronwindows
           echo "Installing poetry"
           (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
           echo "Adding Poetry Scripts directory to the Windows PATH"
@@ -57,28 +57,28 @@ jobs:
         shell: powershell
         run: |
           conda init powershell
-          conda activate conda_windows_sonar_gh_actions
+          conda activate conda_sonaronwindows
           poetry install
 
       - name: Run Stylecheck (isort)
         shell: powershell
         run: |
           conda init powershell
-          conda activate conda_windows_sonar_gh_actions
+          conda activate conda_sonaronwindows
           poetry run isort . --check
 
       - name: Run Stylecheck (black)
         shell: powershell
         run: |
           conda init powershell
-          conda activate conda_windows_sonar_gh_actions
+          conda activate conda_sonaronwindows
           poetry run black . --check
 
       - name: Run test suite
         shell: powershell
         run: |
           conda init powershell
-          conda activate conda_windows_sonar_gh_actions
+          conda activate conda_sonaronwindows
           poetry run pytest
 
       # The official SonarCloud GitHub action ('SonarSource/sonarcloud-github-action@master') only works with Ubuntu outputs:

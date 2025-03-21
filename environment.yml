@@ -1,4 +1,4 @@
-name: "conda_windows_sonar_gh_actions"
+name: "conda_sonaronwindows"
 channels:
   - conda-forge
   - defaults

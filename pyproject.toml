@@ -7,7 +7,6 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 numpy = ">=1.21.5,<2.0.0"
-opencv-python = ">=4.5.5.62,<5.0.0"
 pandas = "<2.0.0"
 python = ">=3.9,<3.12"
 structlog = "^25.2.0"
