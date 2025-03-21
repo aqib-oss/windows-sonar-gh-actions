@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "windows-sonar-gh-actions"
+name = "sonaronwindows"
 version = "0.0.0"
 description = "Demo of Sonar scan for GitHub Actions using the Windows OS"
 license = "MIT License"
@@ -28,10 +28,10 @@ version_variable = "pyproject.toml.version"
 branch = "main"
 changelog_file = "CHANGELOG.md"
 build_command = "poetry build"
-upload_to_release = true # auto-create GitHub release
+upload_to_release = true                    # auto-create GitHub release
 upload_to_pypi = false
-remove_dist = false # do NOT remove distribution files
-patch_without_tag = true # patch release by default
+remove_dist = false                         # do NOT remove distribution files
+patch_without_tag = true                    # patch release by default
 
 [tool.black]
 line-length = 90
@@ -42,5 +42,5 @@ profile = "black"
 skip = [".conda", ".venv", "build"]
 
 [build-system]
-requires= ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"

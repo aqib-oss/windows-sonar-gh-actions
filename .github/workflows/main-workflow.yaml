@@ -13,13 +13,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "windows-sonar-gh-actions-${{ github.head_ref }}"
+  group: "sonaronwindows-${{ github.head_ref }}"
   cancel-in-progress: false
 
 env:
   PYTHON_VERSION: "3.11"
   CONDA_ENV: "conda_windows_sonar_gh_actions"
-  PYPI_LIBRARY_NAME: "windows-sonar-gh-actions"
+  PYPI_LIBRARY_NAME: "sonaronwindows"
   TEST_IMPORT: "${{ vars.TEST_IMPORT_STATEMENT }}"
   LINK_TO_RELEASES: "https://github.com/${{ github.repository }}/releases"
   SONAR_SCANNER_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-windows-x64.zip
@@ -88,7 +88,7 @@ jobs:
           $Env:PATH += ';C:\Users\runneradmin\AppData\Roaming\Python\Scripts'
           poetry --version
 
-      - name: Install windows-sonar-gh-actions using poetry
+      - name: Install sonaronwindows using poetry
         shell: powershell
         run: |
           conda init powershell
