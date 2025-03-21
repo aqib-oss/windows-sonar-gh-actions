@@ -12,6 +12,7 @@ python = ">=3.9,<3.12"
 structlog = "^25.2.0"
 
 [tool.poetry.group.dev.dependencies]
+pytest = ">=6.2.5"
 black = "^24.3.0"
 devtools = "^0.12.2"
 flake8 = "^7.1.1"

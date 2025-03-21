@@ -50,6 +50,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+coverage-reports/
 
 # Translations
 *.mo
@@ -178,9 +179,6 @@ cython_debug/
 
 # MacOS metadata files
 .DS_Store
-
-# Coverage report
-coverage-reports/
 
 # Outputs
 outputs/
