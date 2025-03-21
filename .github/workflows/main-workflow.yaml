@@ -128,7 +128,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           echo "Running Sonar Scan"
-          ${{ env.SONAR_INSTALL_DIR }}\bin\sonar-scanner.bat - D'sonar.token=${{ secrets.SONAR_TOKEN }}'
+          ${{ env.SONAR_INSTALL_DIR }}\bin\sonar-scanner.bat -D'sonar.token=${{ secrets.SONAR_TOKEN }}'
 
       - name: Semantic Release
         shell: powershell
