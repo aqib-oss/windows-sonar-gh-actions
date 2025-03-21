@@ -1,0 +1,8 @@
+[run]
+omit =
+    *\__init__.py
+    *\tests\*
+
+relative_files = True
+source = windows-sonar-gh-actions
+branch = True

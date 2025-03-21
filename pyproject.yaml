@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "windows-sonar-gh-actions"
+version = "0.0.0"
+description = "Demo of Sonar scan for GitHub Actions using the Windows OS"
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+numpy = ">=1.21.5,<2.0.0"
+opencv-python = ">=4.5.5.62,<5.0.0"
+pandas = "<2.0.0"
+python = ">=3.9,<3.12"
+structlog = "^25.2.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+devtools = "^0.12.2"
+flake8 = "^7.1.1"
+isort = "^5.13.2"
+pre-commit = "^3.7.0"
+pylint = "^3.3.6"
+pytest-cov = "^5.0.0"
+pytest-randomly = "^3.15.0"
+python-semantic-release = "^7.32.2"
+
+[tool.semantic_release]
+version_variable = "pyproject.toml.version"
+branch = "main"
+changelog_file = "CHANGELOG.md"
+build_command = "poetry build"
+upload_to_release = true # auto-create GitHub release
+upload_to_pypi = false
+remove_dist = false # do NOT remove distribution files
+patch_without_tag = true # patch release by default
+
+[tool.black]
+line-length = 90
+target-verson = ["py311"]
+
+[too.isort]
+profile = "black"
+skip = [".conda", ".venv", "build"]
+
+[build-system]
+requires= ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

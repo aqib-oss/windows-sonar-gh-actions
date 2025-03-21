@@ -1,0 +1,112 @@
+name: pr-workflow
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+concurrency:
+  group: "windows-sonar-gh-actions-${{ github.head_ref }}"
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.11"
+  CONDA_ENV: "conda_windows_sonar_gh_actions"
+  PYPI_LIBRARY_NAME: "windows-sonar-gh-actions"
+  SONAR_SCANNER_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-windows-x64.zip
+  SONAR_INSTALL_DIR: C:\SonarScannerCLI\sonar-scanner-6.1.0.4477-windows-x64
+
+jobs:
+  pr-workflow:
+    runs-on: ${{ matrix.os }}
+    continue-on-error: ${{ matrix.experimental }}
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: ["3.11"]
+        os: [windows-latest]
+        experimental: [false]
+
+    steps:
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        shell: powershell
+        run: |
+          echo "Adding miniconda directory to the Windows PATH"
+          $Env:PATH += ';C:\Miniconda\condabin'
+          echo "Creating Conda environment"
+          conda env create -f environment.yml
+          echo "Initializing and activating Conda"
+          conda init powershell
+          conda activate conda_windows_sonar_gh_actions
+          echo "Installing poetry"
+          (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+          echo "Adding Poetry Scripts directory to the Windows PATH"
+          $Env:PATH += ';C:\Users\runneradmin\AppData\Roaming\Python\Scripts'
+          poetry --version
+
+      - name: Install windows-sonar-gh-actions using poetry
+        shell: powershell
+        run: |
+          conda init powershell
+          conda activate conda_windows_sonar_gh_actions
+          poetry install
+
+      - name: Run Stylecheck (isort)
+        shell: powershell
+        run: |
+          conda init powershell
+          conda activate conda_windows_sonar_gh_actions
+          poetry run isort . --check
+
+      - name: Run Stylecheck (black)
+        shell: powershell
+        run: |
+          conda init powershell
+          conda activate conda_windows_sonar_gh_actions
+          poetry run black . --check
+
+      - name: Run test suite
+        shell: powershell
+        run: |
+          conda init powershell
+          conda activate conda_windows_sonar_gh_actions
+          poetry run pytest
+
+      # The official SonarCloud GitHub action ('SonarSource/sonarcloud-github-action@master') only works with Ubuntu outputs:
+      # So, we use install, cahce, and use SonarScanner CLI directly
+
+      - name: Check Sonar Scanner CLI in cache
+        if: matrix.os == 'windows-latest' && matrix.python-version == env.PYTHON_VERSION
+        uses: actions/cache@v4
+        with:
+          path: C:\SonarScannerCLI
+          key: windows-sonar
+        id: cache-sonar
+
+      - name: Install SonarScanner CLI
+        if: matrix.experimental == false && matrix.python-version == env.PYTHON_VERSION && steps.cache-sonar.outputs.cache-hit != 'true'
+        shell: powershell
+        run: |
+          echo "Creating the SonarScannerCLI directory and installing the SonarScanner CLI"
+          New-Item -Path "C:\" -Name "SonarScannerCLI" -ItemType "directory"
+          Invoke-WebRequest -Uri "${{ env.SONAR_SCANNER_URL }}" -Outfile C:\SonarScannerCLI\sonar-scanner.zip
+          Expand-Archive -LiteralPath C:\SonarScannerCLI\sonar-scanner.zip -DestinationPath C:SonarScannerCLI
+
+      - name: Run Sonar Scan
+        if: matrix.os == 'windows-latest' && matrix.python-version == env.PYTHON_VERSION
+        shell: powershell
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed for PR information
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          echo "Running Sonar Scan"
+          ${{ env.SONAR_INSTALL_DIR }}\bin\sonar-scanner.bat - D'sonar.token=${{ secrets.SONAR_TOKEN }}'
