@@ -4,4 +4,4 @@
 
 ## Testing details
 
-- Enter details about how the changes were tested and verified to be working as expected without any side-effects.
+- Enter details about how the changes were tested and verified to work as expected without any side effects.
