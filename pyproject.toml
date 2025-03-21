@@ -2,6 +2,7 @@
 name = "sonaronwindows"
 version = "0.0.0"
 description = "Demo of Sonar scan for GitHub Actions using the Windows OS"
+authors = ["aqib-bhat"]
 license = "MIT License"
 readme = "README.md"
 
@@ -24,7 +25,7 @@ pytest-randomly = "^3.15.0"
 python-semantic-release = "^7.32.2"
 
 [tool.semantic_release]
-version_variable = "pyproject.toml.version"
+version_variable = "pyproject.toml:version"
 branch = "main"
 changelog_file = "CHANGELOG.md"
 build_command = "poetry build"
@@ -37,7 +38,7 @@ patch_without_tag = true                    # patch release by default
 line-length = 90
 target-verson = ["py311"]
 
-[too.isort]
+[tool.isort]
 profile = "black"
 skip = [".conda", ".venv", "build"]
 
