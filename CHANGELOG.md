@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.2 (2025-03-23)
+
+### Fix
+
+* Sonar move to OSS GH org ([#10](https://github.com/aqib-oss/windows-sonar-gh-actions/issues/10)) ([`4717b9e`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/4717b9ef1fdfdde6ec881728a4135da590a0540d))
+
 ## v0.1.1 (2025-03-23)
 
 ### Documentation
