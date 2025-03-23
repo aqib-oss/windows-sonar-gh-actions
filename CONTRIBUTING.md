@@ -4,16 +4,61 @@
 
 - [Contributing](#contributing)
   - [Table of Contents](#table-of-contents)
-  - [Base setup](#base-setup)
+  - [Setup](#setup)
+  - [Making a change](#making-a-change)
 
 ## Setup
 
-- Install miniconda
+- Install miniconda.
   - Initialize conda: `conda init`
-- Install Poetry
-- Create the conda env: `conda env create --file environment.yml`
-- Activate the conda env: `conda activate conda_sonaronwindows`
+- Install Poetry.
+- Create and activate the conda env:
+
+  ```shell
+  conda env create --file environment.yml
+  conda activate conda_sonaronwindows
+  ```
+
 - Install the package: `poetry install`
-- Install the pre-commit hooks: `pre-commit install`
-- Run the pre-commit hooks on all files: `pre-commit run --all-files`
-  - New, untracked files are not included in this.
+
+## Making a change
+
+- Create a branch for your changes e.g. `git checkout -b fix/npe-get-salary`
+- Add your changes to git: `git add .`
+- Install and run the pre-commit hooks:
+
+  ```shell
+  pre-commit install
+  pre-commit run --all-files
+  ```
+
+  - The `pre-commit` hooks do NOT run on new files till they start to be tracked by `git`.
+
+- Make a commit that follows the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/) that works with the [Python Semantic Release](https://python-semantic-release.readthedocs.io/en/latest/) package used for generating releases for this Python project.
+
+  ```shell
+  <type>[optional scope]: <description>
+
+  [optional body]
+
+  [optional footer(s)]
+  ```
+
+  - e.g. `git commit -m "fix: NPE is get_salary method"`
+  - Start a commit message with one of the following: `fix:` | `feat:` | `perf:` | `build:` | `ci:` | `refactor:` | `docs:` | `test:` | `chore:` | `style:`
+  - By default, if you do not set the start as above, the update is considered a patch.
+  - For a breaking change, add "BREAKING CHANGE" in the footer of the full commit message e.g.
+
+  ```shell
+  feat: A whole new way of doing things
+  BREAKING CHANGE: The amazing option will now be replaced with the boring option.
+  ```
+
+- Make sure to get the latest changes from the `main` branch. Fix any conflicts if needed.
+
+  ```shell
+  git fetch origin
+  git merge origin/main
+  ```
+
+- Push your branch to origin and make a PR on GitHub.

@@ -102,9 +102,6 @@ jobs:
           conda activate conda_sonaronwindows
           poetry run pytest
 
-      # The official SonarCloud GitHub action ('SonarSource/sonarcloud-github-action@master') only works with Ubuntu outputs:
-      # So, we use install, cahce, and use SonarScanner CLI directly
-
       - name: Check Sonar Scanner CLI in cache
         uses: actions/cache@v4
         with:
