@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sonaronwindows"
-version = "0.1.0"
+version = "0.1.1"
 description = "Demo of Sonar scan for GitHub Actions using the Windows OS"
 authors = ["aqib-bhat"]
 license = "MIT License"

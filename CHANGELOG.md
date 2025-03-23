@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.1 (2025-03-23)
+
+### Documentation
+
+* Update docs ([#4](https://github.com/aqib-bhat/windows-sonar-gh-actions/issues/4)) ([`efac345`](https://github.com/aqib-bhat/windows-sonar-gh-actions/commit/efac3451e0135480bda686a19eac522042968b4b))
+
 ## v0.1.0 (2025-03-21)
 
 ### Feature
