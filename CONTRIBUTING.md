@@ -61,5 +61,7 @@
   git merge origin/main
   ```
 
-- Push your branch upstream e.g. `git push --set-upstream origin docs/update-docs`
+- Push your branch upstream:
+  - For the initial push: `git push --set-upstream origin docs/update-docs`
+  - For subsequent pushes: `git push`
 - Create a PR on GitHub with your branch.

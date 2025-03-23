@@ -31,15 +31,15 @@ This is for CI-based analysis, not automatic analysis by SonarQube.
 
 ## Links and stats
 
-- This project on SonarQube Cloud: <https://sonarcloud.io/project/overview?id=aqib-bhat_windows-sonar-gh-actions>
+- This project on SonarQube Cloud: <https://sonarcloud.io/project/configuration?id=aqib-oss_windows-sonar-gh-actions>
 - [How to contribute - setup, PR, etc.](CONTRIBUTING.md)
 
-| Source                        | Status                                                                                                                                                                                                                  |
-| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GitHub Actions main workflow  | [![main-workflow](https://github.com/aqib-bhat/windows-sonar-gh-actions/actions/workflows/main-workflow.yaml/badge.svg)](https://github.com/aqib-bhat/windows-sonar-gh-actions/actions/workflows/main-workflow.yaml)    |
-| GitHub Action PR workflow     | [![pr-workflow](https://github.com/aqib-bhat/windows-sonar-gh-actions/actions/workflows/pr-workflow.yaml/badge.svg)](https://github.com/aqib-bhat/windows-sonar-gh-actions/actions/workflows/pr-workflow.yaml)          |
-| SonarQube Quality Gate status | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aqib-bhat_windows-sonar-gh-actions&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aqib-bhat_windows-sonar-gh-actions) |
-| SonarQube Code Coverage       | [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=aqib-bhat_windows-sonar-gh-actions&metric=coverage)](https://sonarcloud.io/summary/new_code?id=aqib-bhat_windows-sonar-gh-actions)                |
+| Source                        | Status                                                                                                                                                                                                                |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub Actions main workflow  | [![main-workflow](https://github.com/aqib-oss/windows-sonar-gh-actions/actions/workflows/main-workflow.yaml/badge.svg)](https://github.com/aqib-oss/windows-sonar-gh-actions/actions/workflows/main-workflow.yaml)    |
+| GitHub Action PR workflow     | [![pr-workflow](https://github.com/aqib-oss/windows-sonar-gh-actions/actions/workflows/pr-workflow.yaml/badge.svg)](https://github.com/aqib-oss/windows-sonar-gh-actions/actions/workflows/pr-workflow.yaml)          |
+| SonarQube Quality Gate status | [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aqib-oss_windows-sonar-gh-actions&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aqib-oss_windows-sonar-gh-actions) |
+| SonarQube Code Coverage       | [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=aqib-oss_windows-sonar-gh-actions&metric=coverage)](https://sonarcloud.io/summary/new_code?id=aqib-oss_windows-sonar-gh-actions)                |
 
 ## Next steps
 
