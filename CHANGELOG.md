@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.1.12 (2025-05-14)
+
+### Fix
+
+* Upgrade cryptography ([#22](https://github.com/aqib-oss/windows-sonar-gh-actions/issues/22)) ([`48848c7`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/48848c78a18bf65154208b1c5301d4a0969333c3))
+
 ## v0.1.11 (2025-05-14)
 
 
