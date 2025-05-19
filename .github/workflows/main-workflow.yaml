@@ -51,7 +51,7 @@ jobs:
               Add-Content -Path $env:GITHUB_OUTPUT -Value "is_semver=true"
           }
           else {
-              echo "Detected that the change is NOT for semantic versioning"
+              echo "Detected that the latest change was NOT made for semantic versioning"
               Add-Content -Path $env:GITHUB_OUTPUT -Value "is_semver=false"
           }
 
@@ -139,5 +139,4 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           poetry --version
-          poetry run semantic-release version
           poetry run semantic-release publish

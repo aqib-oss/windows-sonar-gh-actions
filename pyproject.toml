@@ -24,13 +24,35 @@ python-semantic-release = "^9.21.1"
 
 [tool.semantic_release]
 version_variables = ["pyproject.toml:version"]
-branch = "main"
-changelog_file = "CHANGELOG.md"
+commit_parser = "conventional"
+commit_parser_options = { parse_squash_commits = true, ignore_merge_commits = true }
+major_on_zero = true
+version_toml = ["pyproject.toml:tool.poetry.version"]
 build_command = "poetry build"
-upload_to_release = true                    # auto-create GitHub release
-upload_to_pypi = false
-remove_dist = false                         # do NOT remove distribution files
-patch_without_tag = true                    # patch release by default
+
+[tool.semantic_release.changelog]
+default_templates = { changelog_file = "CHANGELOG.md" }
+exclude_commit_patterns = [
+  '''chore(?:\([^)]*?\))?: .+''',
+  '''ci(?:\([^)]*?\))?: .+''',
+  '''refactor(?:\([^)]*?\))?: .+''',
+  '''style(?:\([^)]*?\))?: .+''',
+  '''test(?:\([^)]*?\))?: .+''',
+  '''build\((?!deps\): .+)''',
+  '''Merged? .*''',
+  '''Initial Commit.*''',
+  # Old semantic-release version commits
+  '''^\d+\.\d+\.\d+''',
+]
+mode = "update"
+
+[tool.semantic_release.branches.main]
+match = "(main|master)"
+prerelease = false
+prerelease_token = "rc"
+
+[tool.semantic_release.publish]
+upload_to_vcs_release = true
 
 [tool.black]
 line-length = 90
