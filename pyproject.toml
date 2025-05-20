@@ -32,8 +32,14 @@ build_command = "poetry build"
 [tool.semantic_release.changelog]
 default_templates = { changelog_file = "CHANGELOG.md" }
 exclude_commit_patterns = [
+    '''ci(?:\([^)]*?\))?: .+''',
+    '''style(?:\([^)]*?\))?: .+''',
+    '''test(?:\([^)]*?\))?: .+''',
+    '''build\((?!deps\): .+)''',
     '''Merged? .*''',
     '''Initial Commit.*''',
+    # Old semantic-release version commits
+    '''^\d+\.\d+\.\d+''',
 ]
 mode = "update"
 
