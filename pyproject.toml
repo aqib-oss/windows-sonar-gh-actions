@@ -23,9 +23,8 @@ pytest-randomly = "^3.15.0"
 python-semantic-release = "^9.21.1"
 
 [tool.semantic_release]
-version_variables = ["pyproject.toml:version"]
 commit_parser = "conventional"
-commit_parser_options = { parse_squash_commits = true, ignore_merge_commits = true }
+commit_parser_options = { default_bump_level = LevelBump.PATCH }
 major_on_zero = true
 version_toml = ["pyproject.toml:tool.poetry.version"]
 build_command = "poetry build"
