@@ -140,5 +140,10 @@ jobs:
           git config user.email github-actions@github.com
           poetry --version
           poetry run semantic-release version --changelog
+          echo "Checking for changes after versioning"
+          git status
           git diff
           poetry run semantic-release publish
+          echo "Checking for changes after publishing"
+          git status
+          git diff
