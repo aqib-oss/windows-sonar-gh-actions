@@ -139,5 +139,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           poetry --version
-          poetry run semantic-release version --changelog
+          poetry run semantic-release version
+          poetry run semantic-release changelog
           poetry run semantic-release publish
