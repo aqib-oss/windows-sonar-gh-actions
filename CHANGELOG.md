@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.4 (2025-05-20)
+
+### Continuous Integration
+
+- Update CHANGELOG
+  ([`db99410`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/db994109cbcc994d9f3a3fcee1c1c9ae609b009f))
+
+
 ## v0.1.12 (2025-05-14)
 
 ### Fix
