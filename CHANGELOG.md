@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.2.5 (2025-05-20)
+
+### Continuous Integration
+
+- Revert changes now that all is good
+  ([`447f7f4`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/447f7f449e7679336624b681701cfd4faca0184f))
+
+
 ## v0.2.4 (2025-05-20)
 
 ### Continuous Integration
