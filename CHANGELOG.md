@@ -2,6 +2,30 @@
 
 <!-- version list -->
 
+## v0.2.6 (2025-06-07)
+
+### Build System
+
+- **deps**: Bump structlog from 25.3.0 to 25.4.0
+  ([#28](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/28),
+  [`b42855e`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/b42855eadd3f15dd8f9bab6705551fad98edcb64))
+
+Bumps [structlog](https://github.com/hynek/structlog) from 25.3.0 to 25.4.0. - [Release
+  notes](https://github.com/hynek/structlog/releases) -
+  [Changelog](https://github.com/hynek/structlog/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/hynek/structlog/compare/25.3.0...25.4.0)
+
+--- updated-dependencies: - dependency-name: structlog dependency-version: 25.4.0
+
+dependency-type: direct:production
+
+update-type: version-update:semver-minor ...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+
 ## v0.2.5 (2025-05-20)
 
 ### Continuous Integration
