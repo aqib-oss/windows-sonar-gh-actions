@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.1 (2025-06-07)
+
+### Build System
+
+- **deps-dev**: Bump pytest from 8.3.5 to 8.4.0
+  ([#27](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/27),
+  [`ec6fcec`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/ec6fcec063ea95ea7944018d5e57df513fe2d2b5))
+
+
 ## v1.0.0 (2025-06-07)
 
 ### Build System
