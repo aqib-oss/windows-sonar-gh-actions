@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v1.0.3 (2025-06-15)
+
+### Refactoring
+
+- Consistent naming wf steps ([#30](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/30),
+  [`1c782e5`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/1c782e56ecf96083115abb614a84a0bcc077e41f))
+
+
 ## v1.0.2 (2025-06-15)
 
 ### Build System
