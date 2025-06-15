@@ -27,7 +27,7 @@ env:
   SEMVER_PAT: ${{ secrets.SEMVER_GH_TOKEN }}
 
 jobs:
-  pre_check:
+  pre-check:
     runs-on: windows-latest
     outputs:
       is_semver: ${{ steps.check_message.outputs.is_semver }}
@@ -56,8 +56,8 @@ jobs:
           }
 
   main-workflow:
-    needs: pre_check
-    if: needs.pre_check.outputs.is_semver == 'false'
+    needs: pre-check
+    if: needs.pre-check.outputs.is_semver == 'false'
     runs-on: windows-latest
 
     steps:
