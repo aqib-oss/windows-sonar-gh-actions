@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.2 (2025-06-15)
+
+### Build System
+
+- **deps-dev**: Bump requests from 2.32.3 to 2.32.4 in the pip group
+  ([#29](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/29),
+  [`63dab81`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/63dab819986748c2c72850f2a082292850db2539))
+
+
 ## v1.0.1 (2025-06-07)
 
 ### Build System
