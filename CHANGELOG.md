@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.6 (2025-06-22)
+
+### Build System
+
+- **deps-dev**: Bump flake8 from 7.2.0 to 7.3.0
+  ([#35](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/35),
+  [`f919eb2`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/f919eb2ab5ef5c03ec4dd1805e1e6db0182fd27f))
+
+
 ## v1.0.5 (2025-06-22)
 
 ### Build System
