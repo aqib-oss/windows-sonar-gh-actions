@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.4 (2025-06-22)
+
+### Build System
+
+- **deps-dev**: Bump pytest-cov from 6.1.1 to 6.2.1
+  ([#31](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/31),
+  [`31d1cd7`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/31d1cd73743ccd0977ce055853f9a6e5916d5d87))
+
+
 ## v1.0.3 (2025-06-15)
 
 ### Refactoring
