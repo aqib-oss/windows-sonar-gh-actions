@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.5 (2025-06-22)
+
+### Build System
+
+- **deps-dev**: Bump urllib3 from 2.4.0 to 2.5.0 in the pip group
+  ([#33](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/33),
+  [`23c971a`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/23c971a1a78dc00408906bf0f029f5eaaede76bc))
+
+
 ## v1.0.4 (2025-06-22)
 
 ### Build System
