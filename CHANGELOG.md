@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.0.8 (2025-06-22)
+
+### Build System
+
+- **deps-dev**: Bump python-semantic-release from 10.0.2 to 10.1.0
+  ([#32](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/32),
+  [`e173012`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/e173012f673ccd3e2fe3b7aaace4b7f0e87e1ff9))
+
+
 ## v1.0.7 (2025-06-22)
 
 ### Build System
