@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.3.0 (2026-02-16)
+
+### Features
+
+- Update dependencies to get latest urllib3 (2.6.3)
+  ([#50](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/50),
+  [`fc35e5d`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/fc35e5dbe1e201f906833a6a9d9ae11134811e6f))
+
+
 ## v1.2.0 (2026-02-16)
 
 ### Features
