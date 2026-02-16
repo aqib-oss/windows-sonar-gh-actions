@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.2.0 (2026-02-16)
+
+### Features
+
+- Update python-semantic-release to latest version (10.5.3)
+  ([#49](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/49),
+  [`da8c46f`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/da8c46f9b83832355887ca9e86783a47122ec7c9))
+
+
 ## v1.1.0 (2026-02-16)
 
 ### Features
