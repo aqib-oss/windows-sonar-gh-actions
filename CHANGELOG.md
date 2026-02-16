@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.4.0 (2026-02-16)
+
+### Features
+
+- Update filelock to address security vulnerability (3.18.0 → 3.24.2)
+  ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
+  [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
+
+
 ## v1.3.0 (2026-02-16)
 
 ### Features
