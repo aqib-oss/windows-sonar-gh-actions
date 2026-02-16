@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.1.0 (2026-02-16)
+
+### Features
+
+- Add copilot instructions for future AI assistance
+  ([#48](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/48),
+  [`4afd57b`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/4afd57bc0890408a2b285424829de5d205300010))
+
+
 ## v1.0.10 (2025-08-05)
 
 ### Build System
