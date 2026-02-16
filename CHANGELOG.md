@@ -2,11 +2,20 @@
 
 <!-- version list -->
 
+## v1.5.0 (2026-02-16)
+
+### Features
+
+- Update pytest and pytest-cov to latest versions
+  ([#52](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/52),
+  [`9f5a58c`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/9f5a58cc716b6bbbd8c261c3b2e11edb43f0ac38))
+
+
 ## v1.4.0 (2026-02-16)
 
 ### Features
 
-- Update filelock to address security vulnerability (3.18.0 → 3.24.2)
+- Update filelock to address security vulnerability (3.18.0 â†’ 3.24.2)
   ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
   [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
 
