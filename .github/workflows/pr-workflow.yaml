@@ -12,8 +12,8 @@ env:
   PYTHON_VERSION: "3.11"
   CONDA_ENV: "conda_sonaronwindows"
   PYPI_LIBRARY_NAME: "sonaronwindows"
-  SONAR_SCANNER_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-6.1.0.4477-windows-x64.zip
-  SONAR_INSTALL_DIR: C:\SonarScannerCLI\sonar-scanner-6.1.0.4477-windows-x64
+  SONAR_SCANNER_URL: https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-8.0.1.6346-windows-x64.zip
+  SONAR_INSTALL_DIR: C:\SonarScannerCLI\sonar-scanner-8.0.1.6346-windows-x64
 
 jobs:
   pr-workflow:
