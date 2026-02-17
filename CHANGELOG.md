@@ -2,11 +2,20 @@
 
 <!-- version list -->
 
+## v1.6.1 (2026-02-17)
+
+### Build System
+
+- **deps**: Bump structlog from 25.4.0 to 25.5.0
+  ([#57](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/57),
+  [`3471135`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/347113552ec3682f8497fe261ee941cac82eaba5))
+
+
 ## v1.6.0 (2026-02-16)
 
 ### Features
 
-- Update pylint to latest version (3.3.7 → 4.0.4)
+- Update pylint to latest version (3.3.7 â†’ 4.0.4)
   ([#53](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/53),
   [`f0c9b21`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/f0c9b214ae30093fa02cf67f91bb862574118e60))
 
@@ -24,7 +33,7 @@
 
 ### Features
 
-- Update filelock to address security vulnerability (3.18.0 Ã¢â€ â€™ 3.24.2)
+- Update filelock to address security vulnerability (3.18.0 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 3.24.2)
   ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
   [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
 
