@@ -12,7 +12,7 @@ structlog = "^25.5.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^9.0.2"
-black = "^25.1.0"
+black = "^26.1.0"
 devtools = "^0.12.2"
 flake8 = "^7.3.0"
 isort = "^6.0.1"
