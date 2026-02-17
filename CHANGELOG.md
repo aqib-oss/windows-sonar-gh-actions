@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.6.3 (2026-02-17)
+
+### Chores
+
+- Update pytest-randomly to 4.0.1
+  ([#59](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/59),
+  [`fd6ff75`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/fd6ff75e3c6a6f91c06a707665e210225b2e022b))
+
+
 ## v1.6.2 (2026-02-17)
 
 ### Bug Fixes
@@ -30,7 +39,7 @@
 
 ### Features
 
-- Update pylint to latest version (3.3.7 Ã¢â€ â€™ 4.0.4)
+- Update pylint to latest version (3.3.7 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 4.0.4)
   ([#53](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/53),
   [`f0c9b21`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/f0c9b214ae30093fa02cf67f91bb862574118e60))
 
@@ -48,7 +57,7 @@
 
 ### Features
 
-- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ 3.24.2)
+- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ 3.24.2)
   ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
   [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
 
