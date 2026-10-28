@@ -2,6 +2,25 @@
 
 <!-- version list -->
 
+## v1.6.5 (2026-10-28)
+
+### Chores
+
+- Raise minimum Python to 3.11 and update GitHub Actions
+  ([#62](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/62),
+  [`1a27786`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/1a277869e41868de70dbe143e708ac381e69ea8a))
+
+- Raise minimum Python version to 3.11
+  ([#62](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/62),
+  [`1a27786`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/1a277869e41868de70dbe143e708ac381e69ea8a))
+
+### Continuous Integration
+
+- Update GitHub Actions to Node.js 24 versions
+  ([#62](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/62),
+  [`1a27786`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/1a277869e41868de70dbe143e708ac381e69ea8a))
+
+
 ## v1.6.4 (2026-10-28)
 
 ### Chores
@@ -48,7 +67,7 @@
 
 ### Features
 
-- Update pylint to latest version (3.3.7 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ 4.0.4)
+- Update pylint to latest version (3.3.7 ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ 4.0.4)
   ([#53](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/53),
   [`f0c9b21`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/f0c9b214ae30093fa02cf67f91bb862574118e60))
 
@@ -66,7 +85,7 @@
 
 ### Features
 
-- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ 3.24.2)
+- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ 3.24.2)
   ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
   [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
 
