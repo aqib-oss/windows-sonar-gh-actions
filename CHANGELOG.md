@@ -2,6 +2,15 @@
 
 <!-- version list -->
 
+## v1.6.4 (2026-10-28)
+
+### Chores
+
+- Update dependencies to resolve Dependabot alerts
+  ([#61](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/61),
+  [`1da3a50`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/1da3a50d37680612f1bf38ab10ed6d0929e2f78c))
+
+
 ## v1.6.3 (2026-02-17)
 
 ### Chores
@@ -39,7 +48,7 @@
 
 ### Features
 
-- Update pylint to latest version (3.3.7 ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ 4.0.4)
+- Update pylint to latest version (3.3.7 ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ 4.0.4)
   ([#53](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/53),
   [`f0c9b21`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/f0c9b214ae30093fa02cf67f91bb862574118e60))
 
@@ -57,7 +66,7 @@
 
 ### Features
 
-- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ 3.24.2)
+- Update filelock to address security vulnerability (3.18.0 ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ 3.24.2)
   ([#51](https://github.com/aqib-oss/windows-sonar-gh-actions/pull/51),
   [`a1355fa`](https://github.com/aqib-oss/windows-sonar-gh-actions/commit/a1355fa3e4478351a0c9972f34c4ca1f7ed684f4))
 
