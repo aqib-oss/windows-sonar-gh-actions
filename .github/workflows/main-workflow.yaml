@@ -33,7 +33,7 @@ jobs:
       is_semver: ${{ steps.check_message.outputs.is_semver }}
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Check Commit Message Format
         id: check_message
@@ -62,12 +62,12 @@ jobs:
 
     steps:
       - name: Set up Python ${{ env.PYTHON_VERSION }}
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           token: ${{ secrets.SEMVER_GH_TOKEN }}
@@ -103,7 +103,7 @@ jobs:
           poetry run pytest
 
       - name: Check Sonar Scanner CLI in cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: C:\SonarScannerCLI
           key: windows-sonar-8.0.1.6346
